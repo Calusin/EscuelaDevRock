@@ -23,27 +23,6 @@ body{
     background-size:cover;
     background-color:#464646;
 }
-    @media only screen and (max-width:767px){
-        body{background-image:url(images/background-photo-mobile-devices.jpg)}
-        .top{
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-        .top .logo{
-            order: 1;
-            display: flex;
-        }
-        .top .ul{
-            order: 2;
-        }
-    }
-/* .splash{
-    width: 100%;
-    height: 100vh;
-    background: url(../images/fondo4.jpg) center center fixed no-repeat;
-    background-size: contain;
-} */
 .logo{
     width: 160px;
     height: 160px;
@@ -53,6 +32,7 @@ body{
 .top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .splash div ul{
     float: right;
@@ -89,13 +69,7 @@ section{
     font-weight: bold;
     box-shadow: 3px 3px #212121;
 }
-.card a{
 
-}
-
-/* section div p{
-    padding-top: 50px;
-} */
 .cardlogo{
     height: 160px;
     border-radius: 5px;
@@ -107,5 +81,20 @@ section{
 }
 .card a p:hover{
     color: #e30404;
+}
+@media only screen and (max-width:767px){
+    body{background-image:url(images/background-photo-mobile-devices.jpg)}
+    .top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top .logo{
+        order: 1;
+        display: flex;
+    }
+    .top .ul{
+        order: 2;
+    }
 }
 
