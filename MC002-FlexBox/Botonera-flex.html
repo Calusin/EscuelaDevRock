@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotoneraFlex</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        header{
+            display: flex;
+            background: lightskyblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body{
+            margin: 0px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            
+        }
+        ul li{
+            text-transform: uppercase;
+        }
+        .logo{
+            font-size: 30px;
+        }
+        nav{
+            *background-color: purple;
+            width: 400px;
+        }
+        section{
+            display: flex;
+            height: 90vh;
+        }
+        article{
+            flex-grow: 3;
+            background: green;
+            order: 1;
+        }
+        aside{
+            flex-grow: 1;
+            background-color: darkcyan;
+            order: 2;
+        }
+        footer{
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo" href="">🌎</a>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Somos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <aside>
+            aside
+        </aside>
+        <article>
+            contenido
+        </article>
+    </section>
+    <footer>
+        <p>Copy 2022 Calusa</p>
+    </footer>
+</body>
+</html>

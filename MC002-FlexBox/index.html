@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox MasterClass</title>
+    <style>
+        section{
+            height: 800px;
+            background: #fafafa;
+            border: solid 1px #999;
+            display: flex;
+            *flex-direction: row-reverse; /*por defecto es row, indica la alineación en row o column y siempre puede ser reverse*/
+            *flex-wrap: wrap-reverse; /*Por defecto flexbox nos achica los hijos del contenedor y los agrupa
+            flex-wrap nos deja justo la cantidad exacta que entran para el ancho de la pantalla
+            al resto los apila por debajo, ESTO ES TOP RESPONSIVE!!!!! puede ser reverse*/
+            *flex-flow: wrap column; /*sirve para trabajar flex-direction y flex-wrap en la misma instrucción*/
+            *justify-content: center; /*direcciona el contenido horizontalmente a gusto puede ser center, flex-start/end space-around/between*/
+            *align-items: center;/*direcciona el contenido verticalmente*/
+            flex-wrap: wrap;
+            align-content: flex-start;/*Sirve para dentro de flex-wrap wrap poder centrar mejor lo elementos*/
+        }
+        section div{
+            background-color: cornflowerblue;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 80px;
+            box-sizing: border-box;/*para que el paddin no agrande la caja sino lo haga internamente*/
+        }
+        .hije1{
+            background-color: chocolate;
+            order: 2;  
+            /*La propiedad order es parte de la magia de flexbox y nos permite ordenar a gusto los elementos*/
+            *flex-grow: 2;/*Flex grow permite crecer al elemento en acho, en este caso al 2 partes del ancho de nuestro espacio de pantalla, es un poco traicinero con el responsive, probar flex basis*/
+            flex-basis: 50%;/*Permite tomar el % del valor asignado del valor de la pantalla*/
+        }
+        .hije2{
+            background: crimson;
+            order: 3;
+        }
+        .hije3{
+            order: 1;
+        
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="hije1">1</div>
+        <div class="hije2">2</div>
+        <div class="hije3">3</div>
+    </section>
+</body>
+</html>

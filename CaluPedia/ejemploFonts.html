@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Spicy+Rice&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes CSS</title>
+    <!--el css puede estar externo, interno o en linea -->
+    <!--la mejor practica es colocarlo externo, pero para una edición rapida puede ser interno 
+    o en su defecto en linea. No son practicas muy recomendadas/prolijas.-->
+    <style> 
+    body{
+        background-color: yellow;
+        text-transform: capitalize;
+    }
+        h1{
+            font-size: 132px;
+            font-family: 'Spicy Rice', cursive;
+            width: 100%;
+            text-align: center;
+            text-align: center;
+            /*los margenes se pueden tratar en conjunto, los valores se idican como las agujas del reloj
+            arriba, derecho, abajo, izquierdo. También se pueden tratar por tags separados*/
+            *margin: 20px 20px 0px 20px; 
+            margin-right: 20px;
+            margin-top: 50px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            /*lo mismo con el padding que es el relleno.*/
+        }
+        h2{
+            padding: 5px 0px 5px 0px;
+            margin-top: 0px;
+            font-size: 55px;
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+            text-align: center;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        .btn{
+            padding: 5px 25px 5px 25px;
+            font-size: 30px;
+            color: black;
+            background-color: ;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            border-radius: 5px;
+            border: solid 2px black;
+        }
+        .btn:hover{
+            color: black;
+            background-color: white;
+        }
+        p{
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Revoir Dogs</h1>
+    <h2> Una pelicula de tarantino</h2>
+    <p><a href="" class="btn">Entrar</a></p>
+</body>
+</html>

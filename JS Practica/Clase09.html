@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Clase 09 - HTML Magia</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <input type="text" id="entrada"> <br><br>
+    <button id="btn">Saludar</button>
+    <script>
+        let titulo = document.getElementById('titulo')
+        let entrada = document.getElementById('entrada')
+        let btn = document.getElementById('btn')
+
+/*         titulo.innerHTML = "Titulo cambiado desde Java Script"
+        btn.innerHTML = "Pinchame"
+        alert('Bienvenido a mi sitio web') */
+        btn.addEventListener('click',function(){/* Función anonima */
+            let nombre = entrada.value;
+            titulo.innerHTML = 'Hola '+nombre+', Bienvenido!!'
+        })
+        
+
+</script>
+</body>
+</html>

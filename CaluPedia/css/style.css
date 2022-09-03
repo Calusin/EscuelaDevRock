@@ -1,0 +1,52 @@
+body{
+    color: grey;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 13px;
+    margin: 0px;
+}
+nav a img{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    display: inline-block;
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+nav ul li a{
+    padding: 10px 20px 10px 20px;
+    background-color: #bdbdbd;
+    border-radius: 3px;
+    color: #212121;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #fafafa;
+    background-color: #424242;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 70vh; /*vh =viewporHeight*/
+}
+footer{
+    background-color: #212121;
+    height: 200px;
+
+}
+footer p{
+    text-align: right;
+    padding: 30px;
+}
+a{
+    color: inherit;
+}
+.card{
+    width: 48%;
+    float: left;
+    margin: 1%;
+    border: none;
+}

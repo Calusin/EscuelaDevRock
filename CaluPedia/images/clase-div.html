@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>clase-div</title>
+    <style>
+        body{
+            background: url(https://media.revistaad.es/photos/62b2389fcb047658901833aa/16:9/w_2560%2Cc_limit/GettyImages-998587132.jpg);
+        }
+        h1{
+            background-color: pink;
+            *display: inline; /*el display puede cambiar la forma en la que se muestra la etiqueta
+            por defecto el h1 es en bloque y de esta manera podemos mostrarlo en linea.*/
+            *display: none; /*no muestra el elemento*/
+        }
+        p{
+            background-color: orange;
+        }
+        a{
+            background-color: purple;
+        }
+        .card{
+            background-color: rgba(196, 155, 52, 0.11);/*esta es la forma de hacer el fondo transparente*/
+            border: solid 1px grey;
+            width: 250px; /*medida de ancho*/
+            height: 250px;/*medida de alto*/
+            border-radius: 3px;
+            padding: 30px;
+            display: inline-block;/*esto va a mostrar al bloque div en linea pero respetando el bloque
+            que en este caso es el div*/
+            *margin-left: 10px;
+            box-sizing: border-box; /*hace que las medidas del la "caja" o del div sean exactamente las
+            que le pasamos con width y height*/
+            float: left; /*deja flotar cosas/elementos esperando un parametro como left o right*/
+            *opacity: 0.5; /*no es recomendado utilizar este tag porque hace transparente a toda la caja o div*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>en bloque</h1>
+        <p>en bloque</p>
+        <a href="">en linea</a>
+        <a href="">en linea</a>
+    </div>
+    <div class="card">
+        <h1>en bloque 2</h1>
+        <p>en bloque</p>
+        <a href="">en linea</a>
+        <a href="">en linea</a>
+    </div>
+    <div class="card">
+        <h1>en bloque 3</h1>
+        <p>en bloque</p>
+        <a href="">en linea</a>
+        <a href="">en linea</a>
+    </div>
+</body>
+</html>

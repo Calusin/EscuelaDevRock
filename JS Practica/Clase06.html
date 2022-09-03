@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 06 JS</title>
+</head>
+<body>
+    <script>
+        let scorePlayer1 = Math.floor(Math.random()* (1000 - 1)) + 1;
+        let scorePlayer2 = Math.floor(Math.random()* (1000 - 1)) + 1;
+        let scorePlayer3 = Math.floor(Math.random()* (1000 - 1)) + 1;
+        let perfectScore = Math.floor(Math.random()* (1000 - 1)) + 1;
+        
+
+        if(scorePlayer1 > scorePlayer2 && scorePlayer1 > scorePlayer3 || scorePlayer1 == perfectScore){
+            console.log('Player1 Ganaste con tus ' + scorePlayer1 +' puntos!')
+        }else if(scorePlayer2 > scorePlayer1 && scorePlayer2 > scorePlayer3 || scorePlayer2 == perfectScore){
+            console.log('Player2 Ganaste con tus ' + scorePlayer2 +' puntos!')
+        }else if(scorePlayer3 > scorePlayer1 && scorePlayer3 > scorePlayer2 || scorePlayer3 == perfectScore){
+            console.log('Player3 ganaste con tus ' + scorePlayer3 +' puntos!')
+        }else{
+            console.log('No hay ganadores')
+        }
+        console.log('Player 1: '+scorePlayer1,'Player 2: '+scorePlayer2,'Player 3: '+scorePlayer3, perfectScore)
+    </script>
+</body>
+</html>

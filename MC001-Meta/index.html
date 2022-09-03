@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer MC</title>
+    <meta name="description" content="Mi primer master class" />
+    <meta name="keywords" content="master class, html, pepe" />
+    <meta name="author" content="Pasut Lucas" />
+    <meta name="copyrigth" content="Calusa 2022" />
+
+    <!-- ROBOTS -->
+    <meta name="ROBOTS" content="index" /> <!--para que google indexe la web-->
+    <meta name="ROBOTS" content="noindex" /> <!--para que google No indexe la web-->
+    <meta name="ROBOTS" content="follow" /> <!--para que google indexe todos los links dentre de la web-->
+    <meta name="ROBOTS" content="nofollow" /> <!--para que google No indexe todos los links dentro de la web -->
+    <meta name="ROBOTS" content="index follow"> <!--Se pueden colocar varias separados por un espacio-->
+
+    <!--Meta de Facebook con Open Graph https://developers.facebook.com/docs/sharing/webmasters?locale=es_ES -->
+    <meta property="og:title" content="Master Class Face" /> <!--Titulo del posteo en Facebook-->
+    <meta property="og:description" content="Master Class meta con Jony Loco" /> <!--Descripción del posteo-->
+    <meta property="og:type" content="Clase WEB" /> <!--Tipo de contenido-->
+    <meta property="og:image" content="../images/linux.ico" /> <!--Imagen del posteo-->
+    <meta property="og:url" content="mipaginaweb.com" /> <!--URL base de donde se sacó-->
+
+    <!--Meta de twitter, lo mismo que con FB pero en vez de og es twitter-->
+    <meta property="twitter:title" content="Master Class Face" /> <!--Titulo del posteo en Twittwer-->
+    <meta property="twitter:description" content="Master Class meta con Jony Loco" /> <!--Descripción del posteo-->
+    <meta property="twitter:type" content="Clase WEB" /> <!--Tipo de contenido-->
+    <meta property="twitter:image" content="../images/linux.ico" /> <!--Imagen del posteo-->
+    <meta property="twitter:url" content="mipaginaweb.com" /> <!--URL base de donde se sacó-->
+
+    <link rel="icon" href="../images/linux.ico" type="images/png" /> <!--Definir favicon-->
+
+
+
+
+</head>
+<!--Microformatos Schema-->
+<!--Un schema es una forma de alimentar a nuestra web haciendo una simbiosis con google, este levantará los datos que publicamos y nuestra web tendrá más impacto. (CEO o SEO posicionamiento de nuestra web googlear)-->
+<body>
+    <h1>MC001</h1>
+    <h2>Ficha de IT:</h2>
+    <div itemscope itemprop="https://schema.org/Movie">
+        <p>Nombre: <span itemprop="name">IT</span></p>
+        <p>Año: <span itemprop="datePublished" >2017</span> </p>
+        <p>Genero: <span itemprop="Genero">Terror/suspenso</span> </p>
+        <p>Director: <span itemprop="Director"> Andrés Muschietti</span></p>
+        <p>Duración: <span itemprop="duration"> 2:15</span></p>
+    </div>
+    <audio src="audio.mp3" preload="auto" controls ></audio>
+    <video src="video.mp4" controls></video>
+</body>
+</html>

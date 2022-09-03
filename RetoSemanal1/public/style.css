@@ -1,0 +1,26 @@
+.lyrics {
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.infolyr{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: gray;
+}
+footer p{
+    font-size: 15px;
+    text-transform: capitalize;
+    text-shadow: 13px 13px 5px;
+    line-height: 25px;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: lemonchiffon;
+}
+#cr{
+    font-size: 9px;
+}
